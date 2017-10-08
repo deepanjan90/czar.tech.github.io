@@ -2,6 +2,8 @@
           $("#button_id").click(function() {
             setupMapFrame();
             initMap();
+            var random = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+            $('#threatLabel').html('On a scale of 1 - 10, this route has threat level - '+random);
           });
       });
 
