@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+	Transit by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Is My Route Safe</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/saferoute.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<style type="text/css">
+			#map {
+	        height: 50%;
+	        width: 30%;
+	      }
+		</style>
+	</head>
+	<body>
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">CzARTech</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="citystatus.html">City Status</a></li>
+						<li><a href="saferoute.html">Is My Route Safe ?</a></li>
+						<li><a href="crimearoundme.html">Crimes Around Me :O</a></li>
+					</ul>
+					</ul>
+				</nav>
+			</header>
+
+
+		<!-- One -->
+			<section id="one" class="wrapper style1 special customwrapper">
+				
+				<div class="hide"><iframe
+				  width="600"
+				  height="450"
+				  frameborder="0" style="border:0"
+				  src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyCvX8CjXx27PhZHSzK0gDYJ2YHyhiNexbw&origin=#&destination=@&mode=walking" allowfullscreen>
+				</iframe></div>
+				<div class="container">
+				<header class="">
+						<h2>Safe Route</h2>
+						<p>See if taking a route to walk is safe or not</p>
+					</header>
+					<div id="map"></div>
+					<div id="mapFrame">
+						
+					</div>
+
+					<div id="map"></div>
+			    &nbsp;
+			    <div>
+
+			      <h3>Safe Route</h3>
+							<form method="post" action="#">
+								<div class="row uniform 50%">
+									<div class="6u 12u$(4)">
+										<input type="text" name="start_location" id="start_location_id" value="Giant, 4622 Wilkens Ave, Baltimore, MD 21229" placeholder="Name" />
+									</div>
+									<div class="6u$ 12u$(4)">
+										<input type="text" name="end_location" id="end_location_id" value="UMBC Administration Building, Information Technology/ Engineering, 1000 Hilltop Cir, Baltimore, MD 21250" placeholder="Email" />
+									</div>
+								</div>
+							</form>
+							<div class="12u$">
+										<ul class="actions">
+											<li><input type="button" value="Search Routte" class="special" id="button_id"/></li>
+										</ul>
+									</div>
+			    </div>
+					
+
+			</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<section class="links">
+						<div class="row">
+							<section class="3u 6u(medium) 12u$(small)">
+								<h3>Ankur Phadia</h3>
+								<ul class="unstyled">
+									<li><a href="#">(443)851-7191</a></li>
+									<li><a href="#">ankur1@umbc.edu</a></li>
+									<li><a href="#">Phd Computer Science</a></li>
+								</ul>
+							</section>
+							<section class="3u 6u$(medium) 12u$(small)">
+								<h3>Deepanjan Bhattacharyya</h3>
+								<ul class="unstyled">
+									<li><a href="#">(776)856-9999</a></li>
+									<li><a href="#">deep@umbc.edu</a></li>
+									<li><a href="#">Masters Computer Science</a></li>
+								</ul>
+							</section>
+							<section class="3u 6u(medium) 12u$(small)">
+								<h3>Dorsa Zeiei</h3>
+								<ul class="unstyled">
+									<li><a href="#">(576)433-453</a></li>
+									<li><a href="#">dorza@umbc.edu</a></li>
+									<li><a href="#">Phd Computer Science</a></li>
+								</ul>
+							</section>
+							<section class="3u$ 6u$(medium) 12u$(small)">
+								<h3>Komal Sharan</h3>
+								<ul class="unstyled">
+									<li><a href="#">(779)853-5567</a></li>
+									<li><a href="#">komal@umbc.edu</a></li>
+									<li><a href="#">Masters Computer Science</a></li>
+								</ul>
+							</section>
+						</div>
+					</section>
+					<div class="row">
+						<div class="8u 12u$(medium)">
+							<ul class="copyright">
+								<li>&copy; CZAR. All rights reserved.</li>
+								<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+								<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<ul class="icons">
+								<li>
+									<a href="http://fb.me/czartech2017" class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqLiv8GcdI021_uFhkPqCcOoM4scA9EG8&callback=initMap">
+    </script>
+	</body>
+</html>

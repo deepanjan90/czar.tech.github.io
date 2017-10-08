@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--
+	Transit by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Elements - Transit by TEMPLATED</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">CzARTech</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="citystatus.html">City Status</a></li>
+						<li><a href="saferoute.html">Is My Route Safe ?</a></li>
+						<li><a href="crimearoundme.html">Crimes Around Me :O</a></li>
+					</ul>
+					</ul>
+				</nav>
+			</header>
+
+
+		<!-- One -->
+			<section id="one" class="wrapper style1 special customwrapper">
+				<div class="container">
+					<header class="">
+						<h2>Crime Status City Wide</h2>
+						<p>See where crime incedents have happened in your city in the past month</p>
+					</header>
+					<div>
+						<script src="http://maps.google.com/maps/api/js?sensor=false&key=AIzaSyAUZtkM8afPfxL1Q2dZjCIlbvzKkuY46zY" 
+          type="text/javascript"></script>
+
+  <div id="map" style="width: 500px; height: 400px; margin: 0 auto;"></div>
+
+  <script type="text/javascript">
+    var locations = [
+[' 9/30/17 23:00:00 LARCENY FROM AUTO ', 39.29061 , -76.6077 , 1],
+[' 9/30/17 22:30:00 ROBBERY - STREET ' , 39.31327 , -76.64268 , 2],
+[' 9/30/17 22:30:00 ROBBERY - STREET ' , 39.28686, -76.63118  , 3],
+[' 9/30/17 22:06:00 COMMON ASSAULT ' , 39.30002, -76.55659  , 4],
+
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(39.29061,-76.6077),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<section class="links">
+						<div class="row">
+							<section class="3u 6u(medium) 12u$(small)">
+								<h3>Ankur Phadia</h3>
+								<ul class="unstyled">
+									<li><a href="#">(443)851-7191</a></li>
+									<li><a href="#">ankur1@umbc.edu</a></li>
+									<li><a href="#">Phd Computer Science</a></li>
+								</ul>
+							</section>
+							<section class="3u 6u$(medium) 12u$(small)">
+								<h3>Deepanjan Bhattacharyya</h3>
+								<ul class="unstyled">
+									<li><a href="#">(776)856-9999</a></li>
+									<li><a href="#">deep@umbc.edu</a></li>
+									<li><a href="#">Masters Computer Science</a></li>
+								</ul>
+							</section>
+							<section class="3u 6u(medium) 12u$(small)">
+								<h3>Dorsa Zeiei</h3>
+								<ul class="unstyled">
+									<li><a href="#">(576)433-453</a></li>
+									<li><a href="#">dorza@umbc.edu</a></li>
+									<li><a href="#">Phd Computer Science</a></li>
+								</ul>
+							</section>
+							<section class="3u$ 6u$(medium) 12u$(small)">
+								<h3>Komal Sharan</h3>
+								<ul class="unstyled">
+									<li><a href="#">(779)853-5567</a></li>
+									<li><a href="#">komal@umbc.edu</a></li>
+									<li><a href="#">Masters Computer Science</a></li>
+								</ul>
+							</section>
+						</div>
+					</section>
+					<div class="row">
+						<div class="8u 12u$(medium)">
+							<ul class="copyright">
+								<li>&copy; CZAR. All rights reserved.</li>
+								<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+								<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<ul class="icons">
+								<li>
+									<a href="http://fb.me/czartech2017" class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
+								</li>
+								<li>
+									<a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+	</body>
+</html>
