@@ -19,6 +19,6 @@ $(document).ready(function () {
 }).done(function( o ) {
    // do something
    console.log(o);
-});
-	});*/
+});*/
+	});
 });
